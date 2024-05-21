@@ -37,6 +37,11 @@ nav a {
     place-content: center;
     padding: 5px;
 }
+.active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 500;
+}
 nav a:hover {
     background-color: brown;
 
@@ -115,17 +120,44 @@ footer {
     width: 40px;
     height: 40px;
 }
-.back {
-    background-color: rgb(177, 182, 185);
-    margin: auto;
-    width: 50%;
-    height: 400px;
+
+/*contact us*/
+.container {
+    border-radius: 5px;
+    background-color: rgb(229, 196, 155);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 15px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #ff0000;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    z-index: 1;
-}
